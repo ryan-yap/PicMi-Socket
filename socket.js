@@ -30,7 +30,6 @@ io.on("connection", function(socket){
 
     socket.on("test", function(data) {
       if (data == "test"){
-        count++;
         console.log("received messaged", count)
         console.log("connection_made", connection_made)
       }
