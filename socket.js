@@ -29,11 +29,9 @@ io.on("connection", function(socket){
     });
 
     socket.on("test", function(data) {
-      if (data == "test"){
-        console.log("received messaged", count)
-        console.log("connection_made", connection_made)
-      }
+  	socket.emit('test', "true")
     })
+
 
     socket.on("disconnect", function() {
       return
